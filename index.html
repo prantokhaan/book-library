@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Archive</title>
+
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+    <!-- Search Field  -->
+    <header  class="mt-4">
+        <h1 class="text-dark text-center">
+            Welcome to the Largest <span class="text-primary">Book Library!</span>
+           </h1>
+           <h5 class="text-center mt-3 fw-light">
+            A word after a word after a word is power.
+           </h5>
+    </header>
+    <main>
+        <section>
+            <div class="input-group mt-4 mb-2 mx-auto w-50">
+                <input id="search-input" type="text" class="form-control" placeholder="Which book do you want to read today?" aria-label="Recipient's username" aria-describedby="button-addon2">
+        
+                <!-- Search Button  -->
+                <button onclick="searchBooks()" class="btn btn-outline-secondary bg-primary text-white fw-normal" type="button" id="search-button">Search</button>
+            </div>
+           </section>
+        
+           <section>
+                <!-- Number of Books  -->
+            <div id="numbers-Of-books" class="py-2">
+                
+            </div>
+        
+            <div id="books-container" class="container mx-auto mb-5 row row-cols-md-4 g-4">
+        
+            </div>
+          
+           <!-- Error Message  -->
+            <div id="error">
+                
+            </div>
+           </section>
+    </main>
+
+    <!-- Custom JS  -->
+    <script src="JS/main.js"></script>
+</body>
+</html>
